@@ -1,0 +1,9 @@
+.header {
+    border: 1px solid #f0f0f0;
+
+}
+
+.navegation {
+    display: flex;
+    gap: 5px;
+}
