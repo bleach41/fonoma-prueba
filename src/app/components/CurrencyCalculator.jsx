@@ -56,22 +56,22 @@ const CurrencyCalculator = () => {
     };
 
     return (
-        <div>
-            <h2>Calculadora de conversión de moneda</h2>
-            <label>
+        <div className="p-6 bg-gray-100">
+            <h2 className="text-2xl font-bold mb-4">Calculadora de conversión de moneda</h2>
+            <label className="flex flex-col mb-4">
                 Cantidad:
                 <input
                     type="number"
-                    className="text-blue-500"
+                    className="border border-gray-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="Ingrese texto"
                     value={amount}
                     onChange={handleAmountChange}
                 />
             </label>
-            <label>
+            <label className="flex flex-col mb-4">
                 De:
                 <select
-                    className="text-red-500"
+                    className="border border-gray-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                     value={fromCurrency}
                     onChange={handleFromCurrencyChange}
                 >
@@ -83,10 +83,10 @@ const CurrencyCalculator = () => {
                     ))}
                 </select>
             </label>
-            <label>
+            <label className="flex flex-col mb-4">
                 A:
                 <select
-                    className="text-red-500"
+                    className="border border-gray-300 py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                     value={toCurrency}
                     onChange={handleToCurrencyChange}
                 >
@@ -98,9 +98,11 @@ const CurrencyCalculator = () => {
                     ))}
                 </select>
             </label>
-            <button onClick={handleConversion}>Convertir</button>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onClick={handleConversion}>
+                Convertir
+            </button>
             {convertedAmount && (
-                <p className="text-red-500">
+                <p className="text-red-500 mt-4">
                     Cantidad convertida: {convertedAmount.toFixed(2)} {toCurrency}
                 </p>
             )}
