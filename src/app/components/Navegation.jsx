@@ -5,7 +5,7 @@ const links = [{
     label: 'CALCULADORA',
     route: '/'
 }, {
-    label: 'about',
+    label: 'ABOUT',
     route: '/about'
 }, {
     label: 'posts',
@@ -17,10 +17,10 @@ export function Navegation() {
     return (
         <header className={styles.header}>
             <nav >
-                <ul className="flex flex-col items-center justify-between ">
+                <ul className="flex flex-wrap items-center justify-around py-2">
                     {links.map(({ label, route }) => (
                         <li key={route}>
-                            <Link href={route} >
+                            <Link href={route} className=" hover:text-sky-500" >
                                 {label}
                             </Link >
                         </li>
