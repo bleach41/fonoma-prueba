@@ -17,7 +17,7 @@ export function Navegation() {
     return (
         <header className={styles.header}>
             <nav >
-                <ul className="flex flex-wrap items-center justify-around py-2">
+                <ul className="flex flex-wrap items-center justify-around py-2 shadow shadow-lg">
                     {links.map(({ label, route }) => (
                         <li key={route}>
                             <Link href={route} className=" hover:text-sky-500" >

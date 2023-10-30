@@ -1,4 +1,5 @@
 import './globals.css'
+
 import { Inter } from 'next/font/google'
 import { Navegation } from '@/app/components/Navegation'
 
@@ -13,10 +14,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="es">
+      <body className={inter.className} >
         <Navegation />
-        {children}
+        <div className="background">
+
+          {children}
+
+        </div>
       </body>
     </html>
   )
