@@ -56,7 +56,7 @@ const CurrencyCalculator = () => {
     };
 
     return (
-        <div className="p-6 bg-gray-100">
+        <div className="p-6 bg-white my-10 border-spacing-x-4">
             <h2 className="text-2xl font-bold mb-4">Calculadora de conversión de moneda</h2>
             <label className="flex flex-col mb-4">
                 Cantidad:
