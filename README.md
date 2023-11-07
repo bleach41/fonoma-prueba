@@ -1,5 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+![calculadora2](https://github.com/bleach41/fonoma-prueba/assets/78830055/f9ec8825-0990-48e4-966f-b6eb13e6a50e)
 ## Getting Started
 
 First, run the development server:
